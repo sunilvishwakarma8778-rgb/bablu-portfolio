@@ -15,7 +15,7 @@ const Footer = () => {
     <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">Sunil Vishwakarma</h2>
+        <h2 className="text-xl font-semibold text-purple-500">Bablu Vishwakarma</h2>
 
         {/* Navigation Links - Responsive */}
         <nav className="flex flex-wrap justify-center space-x-4 sm:space-x-6 mt-4">
@@ -39,12 +39,11 @@ const Footer = () => {
         {/* Social Media Icons - Responsive */}
         <div className="flex flex-wrap justify-center space-x-4 mt-6">
           {[
-            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/sunil-vishwakarma-a20923284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
-            { icon: <FaInstagram />, link: "https://www.instagram.com/_sunil_0_1_0/" },
-            { icon: <FaWhatsapp />, link: "https://wa.me/917355757848" },
+            { icon: <FaLinkedin />, link: "https://www.linkedin.com/in/bablu-vishwakarma-3a6586b3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" },
+            { icon: <FaWhatsapp />, link: "https://wa.me/916393267067" },
+            { icon: <FaGithub />, link: "https://github.com/babluVish" },
+            { icon: <FaPhone />, link: "tel:+916393267067" },
            
-            
-            
           ].map((item, index) => (
             <a
               key={index}
@@ -60,7 +59,7 @@ const Footer = () => {
 
         {/* Copyright Text */}
         <p className="text-sm text-gray-400 mt-6">
-          © 2025 Sunil Vishwakarma. All rights reserved.
+          © 2023 Babu Vishwakarma. All rights reserved.
         </p>
       </div>
     </footer>

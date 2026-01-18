@@ -13,7 +13,7 @@ const Skills = () => (
       <h2 className="text-3xl sm:text-4xl font-bold text-white">SKILLS</h2>
       <div className="w-24 h-1 bg-[#8245ec] mx-auto mt-2"></div>
       <p className="text-gray-400 mt-4 text-lg font-semibold">
-     Tools and skills I use to design meaningful and user-friendly digital experiences.
+     Technologies I use to develop fast, reliable, and user-friendly mobile apps for iOS and Android.
       </p>
     </div>
 

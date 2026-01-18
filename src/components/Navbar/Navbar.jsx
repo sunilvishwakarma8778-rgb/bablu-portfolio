@@ -49,7 +49,7 @@ const Navbar = () => {
           className="text-lg font-semibold cursor-pointer"
         >
           <span className="text-[#8245ec]">&lt;</span>
-          <span className="text-white">Sunil</span>
+          <span className="text-white">Bablu</span>
           <span className="text-[#8245ec]">..</span>
           <span className="text-white">Vishwakarma</span>
           <span className="text-[#8245ec]">&gt;</span>
@@ -77,12 +77,12 @@ const Navbar = () => {
         <div className="hidden md:flex space-x-4">
           {[ 
             {
-              href: "https://www.linkedin.com/in/sunil-vishwakarma-a20923284",
+              href: "https://www.linkedin.com/in/bablu-vishwakarma-3a6586b3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
               icon: <FaLinkedin size={24} />,
               label: "LinkedIn",
             },
             {
-              href: "https://wa.me/917355757848",
+              href: "https://wa.me/916393267067",
               icon: <FaWhatsapp size={24} />,
               label: "WhatsApp",
             },

@@ -2,7 +2,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import profileImage from "../../assets/Sunil_img.jpeg";
+import profileImage from "../../assets/bblu.png";
 
 const container = {
   hidden: { opacity: 0 },
@@ -43,7 +43,7 @@ const About = () => {
             variants={item}
             className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4"
           >
-            Sunil Vishwakarma
+            Bablu Vishwakarma
           </motion.h2>
 
           <motion.h3
@@ -52,7 +52,7 @@ const About = () => {
           >
             <span className="text-white">I am a </span>
             <ReactTypingEffect
-              text={["UI/UX Designer", "& Creative Designer"]}
+              text={["Android", "& IOS App Developer"]}
               speed={100}
               eraseSpeed={50}
               typingDelay={500}
@@ -67,26 +67,31 @@ const About = () => {
             variants={item}
             className="text-base sm:text-lg text-gray-400 mb-10 mt-8 leading-relaxed"
           >
-            UI/UX Designer with hands-on experience in designing responsive
-            websites and mobile applications. Skilled in user research,
-            wireframing, prototyping, and creating clean, user-friendly
-            interfaces. Experienced in live projects, internships, and startup
-            products with a strong focus on usability, accessibility, and visual
-            hierarchy.
+            I’m a React Native Developer with 7+ years of experience in building
+            and maintaining high-quality Android & iOS applications. I
+            specialize in creating scalable, performance-optimized mobile apps
+            using React Native, along with experience in Flutter and native
+            Android development. I have worked on multiple real-world projects
+            including Government Public Grievance Redressal Systems (PGRS) and
+            public service applications, handling complete development cycles
+            such as UI implementation, API integration, database management,
+            testing, debugging, and Play Store/App Store deployment. I focus on
+            writing clean and reusable code, delivering smooth user experiences,
+            and building secure applications with reliable backend communication
+            and cloud services.
           </motion.p>
 
           <motion.a
             variants={item}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
-            href="https://drive.google.com/file/d/15NyHHbN-gEQuMISTbKhEBOOAjDDbGVy0/view?usp=sharing"
+            href="https://drive.google.com/file/d/1GkdF-uAbfNOtWTAJfR9A2yXgCRHj8PWu/view?usp=drivesdk"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold"
             style={{
               background: "linear-gradient(90deg, #8245ec, #a855f7)",
-              boxShadow:
-                "0 0 5px #8245ec, 0 0 20px #8245ec, 0 0 40px #8245ec",
+              boxShadow: "0 0 5px #8245ec, 0 0 20px #8245ec, 0 0 40px #8245ec",
             }}
           >
             VIEW RESUME

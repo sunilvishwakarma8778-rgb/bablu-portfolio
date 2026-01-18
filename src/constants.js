@@ -1,19 +1,21 @@
 // Skills Section Logo's
-import figma from "./assets/tech_logo/figma.png";
-import xd from "./assets/tech_logo/xd.png";
-import framer from "./assets/tech_logo/framer.png";
-import sketch from "./assets/tech_logo/sketch.png";
-import canva from "./assets/tech_logo/canva.png";
-import ps from "./assets/tech_logo/ps.png";
-import vscode from "./assets/tech_logo/vscode.png";
-import react from "./assets/tech_logo/react.png";
-import github from "./assets/tech_logo/github.png";
-import pr from "./assets/tech_logo/pr.png";
-import gpt from "./assets/tech_logo/gpt.png";
-import miro from "./assets/tech_logo/miro.png";
+import figma from "./assets/tech_logo/react.png";
+import xd from "./assets/tech_logo/flutter.png";
+import framer from "./assets/tech_logo/icons8-javascript-48.png";
+import sketch from "./assets/tech_logo/icons8-android-48.png";
+import canva from "./assets/tech_logo/vscode.png";
+import ps from "./assets/tech_logo/icons8-typescript-48.png";
+import vscode from "./assets/tech_logo/icons8-node-js-48.png";
+import react from "./assets/tech_logo/icons8-html-64.png";
+import github from "./assets/tech_logo/icons8-mongo-db-64.png";
+import pr from "./assets/tech_logo/icons8-html-64.png";
+import gpt from "./assets/tech_logo/icons8-rest-api-64.png";
+import miro from "./assets/tech_logo/icons8-postman-inc-24.png";
+
 // Experience Section Logo's
-import HCLogo from "./assets/company_logo/HC_logo.png";
-import PWskills from "./assets/company_logo/PW_logo.png"
+import HCLogo from "./assets/company_logo/HC_logo.jpeg";
+import PWskills from "./assets/company_logo/PW_logo.jpeg"
+import Rama from "./assets/company_logo/rama.png"
 // Education Section Logo's
 import bit from "./assets/education_logo/BIT_logo.png";
 import hr from "./assets/education_logo/High_School_logo.png";
@@ -48,18 +50,26 @@ export const experiences = [
   {
     id: 0,
     img: HCLogo,
-    role: "Creative Designer",
-    company: "Hyper Cloud Digital Solutions",
-    date: "June 2025 - Present",
-    desc: "A summary of my hands-on internship experience, where I contributed to real-world projects and strengthened my design skills in a collaborative environment.",
+    role: "JSM Infotech Pvt Ltd",
+    company: "Android Developer",
+    date: "05/2018 – 12/2018 (~7 months)",
+    desc: "Worked as an Android Developer, developing mobile app features using Java and integrating APIs. Contributed to building user-focused modules, fixing bugs, and improving app performance for production use.",
   },
   {
     id: 1,
     img: PWskills,
-    role: "UI/UX Design Trainee",
-    company: "PW Skills",
-    date: "September 2025 - Present",
-    desc: "Completed a structured UI/UX design course focused on user research, wireframing, prototyping, design systems, and hands-on projects using Figma.",
+    role: "Alcanzar Software Solution Pvt Ltd",
+    company: "Android Developer",
+    date: "04/2019 – 01/2021 (~1.9 years)",
+    desc: "Worked on multiple mobile projects using Android Java, along with Cordova and Xamarin. Built and maintained app modules, integrated backend APIs, and ensured smooth performance through testing, debugging, and feature enhancements.",
+  },
+  {
+    id: 1,
+    img: Rama,
+    role: "Rama Infotech Pvt Ltd",
+    company: "React Native Developer",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
   },
 ];
 
@@ -67,23 +77,23 @@ export const education = [
   {
     id: 0,
     img: bit,
-    school: "Surya College Of Education Miraganj, Khalilabad",
-    date: "2021-2023",
-    degree: "Bachlor of Art",
+    school: "Subharti University (Delhi)",
+    date: "Year: 2017",
+    degree: "MCA (Master of Computer Applications)",
   },
   {
     id: 1,
     img: hr,
-    school: "National Kala Academy, GORAKHPUR",
-    date: "2020-2021",
-    degree: "Intermediate in Science ",
+    school: "Vinayaka Mission University (Delhi)",
+    date: "Year: 2015",
+    degree: "PGDCA ",
   },
   {
     id: 2,
     img: hr,
-    school: "National Kala Academy, GORAKHPUR",
-    date: "2018-2019",
-    degree: "State Board(X) - Matriculation ",
+    school: "Janata Inter College School",
+    date: "Year: 2010",
+    degree: "12th (Math & Science) ",
   },
 ];
 

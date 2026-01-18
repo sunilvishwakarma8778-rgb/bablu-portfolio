@@ -9,11 +9,11 @@ const Experience = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-       <h2 className="text-4xl font-bold text-white">Experience & Training</h2>
+       <h2 className="text-4xl font-bold text-white">Work Experience</h2>
 
         <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
        <p className="text-gray-400 mt-4 text-lg font-semibold">
-  My professional journey through internships and structured UI/UX training programs.
+  My professional journey in building scalable iOS and Android applications through real-world development projects and industry experience.
 </p>
 
       </div>
@@ -64,7 +64,7 @@ const Experience = () => {
                     </h4>
                   </div>
                   {/* Date at the bottom */}
-                  <p className="text-sm text-gray-500 mt-2">{experience.date}</p>
+                  {/* <p className="text-sm text-gray-500 mt-2">{experience.date}</p> */}
                 </div>
               </div>
 

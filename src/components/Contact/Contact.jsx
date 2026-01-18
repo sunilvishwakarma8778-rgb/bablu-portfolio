@@ -64,7 +64,7 @@ const Contact = () => {
         className="grid grid-cols-2 sm:grid-cols-4 gap-10 mb-16"
       >
         <ContactIcon
-          href="mailto:sunilvishwakarma8778@gmail.com?subject=Contact from Portfolio"
+          href="mailto:bablu13100@gmail.com?subject=Contact from Portfolio"
           gradient="from-purple-600 to-pink-500"
           shadow="shadow-purple-500/40"
           icon={<HiOutlineMail />}
@@ -72,7 +72,7 @@ const Contact = () => {
         />
 
         <ContactIcon
-          href="tel:+917355757848"
+          href="tel:+916393267067"
           gradient="from-green-500 to-emerald-600"
           shadow="shadow-green-500/40"
           icon={<HiOutlinePhone />}
@@ -80,7 +80,7 @@ const Contact = () => {
         />
 
         <ContactIcon
-          href="https://wa.me/917355757848"
+          href="https://wa.me/916393267067"
           gradient="from-green-600 to-lime-500"
           shadow="shadow-green-600/40"
           icon={<FaWhatsapp />}
@@ -88,7 +88,7 @@ const Contact = () => {
         />
 
         <ContactIcon
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/in/bablu-vishwakarma-3a6586b3/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
           gradient="from-blue-600 to-sky-500"
           shadow="shadow-blue-500/40"
           icon={<FaLinkedinIn />}

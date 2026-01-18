@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../../constants";
-import { FaFigma } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
 
 const Work = () => {
   const [selectedProject, setSelectedProject] = useState(null);
@@ -21,7 +21,7 @@ const Work = () => {
       {/* Section Title */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center">
-          <h2 className="text-4xl font-bold text-white">FIGMA PROJECTS</h2>
+          <h2 className="text-4xl font-bold text-white"> PROJECTS</h2>
         </div>
 
         {/* <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
@@ -60,13 +60,13 @@ const Work = () => {
 
       {/* Floating YouTube Icon (bottom-center) */}
       <a
-       href="https://www.figma.com/design/ZIrDRRlxzuSusFMJ9UamKi/portfolio---project?m=auto&t=NgaGHzpHGXuTmXTa-6"
+        href="https://drive.google.com/file/d/1GkdF-uAbfNOtWTAJfR9A2yXgCRHj8PWu/view?usp=drivesdk"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="YouTube Channel"
         className="absolute bottom-1 left-1/2 transform -translate-x-1/2 sm:bottom-1 text-red-500 bg-white/5 p-6 sm:p-7 rounded-full hover:scale-110 transition-transform shadow-2xl z-50"
       >
-        <FaFigma size={88} />
+        <FaReact size={88} />
       </a>
 
       {/* Modal Container */}
@@ -89,7 +89,7 @@ const Work = () => {
                   alt={selectedProject.title}
                   className="lg:w-full w-[95%] object-contain rounded-xl shadow-2xl"
                 />
-               </div>
+              </div>
               <div className="lg:p-8 p-6">
                 <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
                   {selectedProject.title}
@@ -130,7 +130,6 @@ const Work = () => {
           </div>
         </div>
       )}
-
     </section>
   );
 };
