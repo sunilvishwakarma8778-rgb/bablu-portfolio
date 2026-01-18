@@ -2,7 +2,7 @@ import React from "react";
 import ReactTypingEffect from "react-typing-effect";
 import Tilt from "react-parallax-tilt";
 import { motion } from "framer-motion";
-import profileImage from "../../assets/bblu.png";
+import profileImage from "../../assets/bblu.jpg";
 
 const container = {
   hidden: { opacity: 0 },
