@@ -16,6 +16,10 @@ import miro from "./assets/tech_logo/icons8-postman-inc-24.png";
 import HCLogo from "./assets/company_logo/HC_logo.jpeg";
 import PWskills from "./assets/company_logo/PW_logo.jpeg"
 import Rama from "./assets/company_logo/rama.png"
+import Kaldunga from "./assets/company_logo/kaldunga.png"
+import Singsys from "./assets/company_logo/singsys_pte_ltd_logo.jpeg"
+import Ping from "./assets/company_logo/ping.jpeg"
+import Inevitable from "./assets/company_logo/inevitable_infotech_logo.jpeg"
 // Education Section Logo's
 import bit from "./assets/education_logo/BIT_logo.png";
 import hr from "./assets/education_logo/High_School_logo.png";
@@ -68,6 +72,38 @@ export const experiences = [
     img: Rama,
     role: "Rama Infotech Pvt Ltd",
     company: "React Native Developer",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
+  },
+   {
+    id: 1,
+    img: Kaldunga,
+    role: "Kaldunga Pvt Ltd",
+    company: "Reelance",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
+  },
+  {
+    id: 1,
+    img: Singsys,
+    role: "Singsys Pvt Ltd",
+    company: "Software Engineer",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
+  },
+  {
+    id: 1,
+    img: Ping,
+    role: "Ping Pong Entertainment",
+    company: "Mobile App Developer",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
+  },
+  {
+    id: 1,
+    img: Inevitable,
+    role: "Inevitable Infotech",
+    company: "Freelance",
     date: "02/2021 – 09/2025 (~4 years)",
     desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
   },
