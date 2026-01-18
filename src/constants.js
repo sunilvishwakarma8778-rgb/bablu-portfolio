@@ -20,6 +20,7 @@ import Kaldunga from "./assets/company_logo/kaldunga.png"
 import Singsys from "./assets/company_logo/singsys_pte_ltd_logo.jpeg"
 import Ping from "./assets/company_logo/ping.jpeg"
 import Inevitable from "./assets/company_logo/inevitable_infotech_logo.jpeg"
+import Infust from "./assets/company_logo/infust_logo.jpeg"
 // Education Section Logo's
 import bit from "./assets/education_logo/BIT_logo.png";
 import hr from "./assets/education_logo/High_School_logo.png";
@@ -103,6 +104,14 @@ export const experiences = [
     id: 1,
     img: Inevitable,
     role: "Inevitable Infotech",
+    company: "Freelance",
+    date: "02/2021 – 09/2025 (~4 years)",
+    desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
+  },
+   {
+    id: 1,
+    img: Infust,
+    role: "Infust private Ltd",
     company: "Freelance",
     date: "02/2021 – 09/2025 (~4 years)",
     desc: "Developed and maintained cross-platform iOS & Android applications using React Native. Worked on complete app development including UI implementation, REST API integration, Firebase services, performance optimization, and Play Store/App Store deployment.",
