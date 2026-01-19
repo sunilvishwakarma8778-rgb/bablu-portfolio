@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -95,6 +95,9 @@ const Contact = () => {
           label="LinkedIn"
         />
       </motion.div>
+
+      {/* 🧠 Mini Mind Game */}
+      <MindGame />
     </section>
   );
 };
@@ -146,5 +149,134 @@ const ContactIcon = ({ href, gradient, shadow, icon, label }) => (
     </span>
   </motion.a>
 );
+
+/* 🧠 MINI MIND GAME: MEMORY MATCH */
+const MindGame = () => {
+  const emojis = ["🧠", "🎯", "⚡", "🔥", "🚀", "🎮", "💡", "👾"];
+
+  const createDeck = () => {
+    return [...emojis, ...emojis]
+      .map((value) => ({
+        value,
+        id: crypto.randomUUID(),
+        matched: false,
+      }))
+      .sort(() => Math.random() - 0.5);
+  };
+
+  const [cards, setCards] = useState(createDeck());
+  const [firstPick, setFirstPick] = useState(null);
+  const [secondPick, setSecondPick] = useState(null);
+  const [disabled, setDisabled] = useState(false);
+  const [moves, setMoves] = useState(0);
+  const [matchedCount, setMatchedCount] = useState(0);
+
+  const resetGame = () => {
+    setCards(createDeck());
+    setFirstPick(null);
+    setSecondPick(null);
+    setDisabled(false);
+    setMoves(0);
+    setMatchedCount(0);
+  };
+
+  const handlePick = (card) => {
+    if (disabled) return;
+    if (card.matched) return;
+    if (firstPick?.id === card.id) return;
+
+    if (!firstPick) {
+      setFirstPick(card);
+      return;
+    }
+
+    setSecondPick(card);
+    setMoves((m) => m + 1);
+  };
+
+  useEffect(() => {
+    if (!firstPick || !secondPick) return;
+
+    setDisabled(true);
+
+    if (firstPick.value === secondPick.value) {
+      setCards((prev) =>
+        prev.map((c) =>
+          c.value === firstPick.value ? { ...c, matched: true } : c
+        )
+      );
+
+      setMatchedCount((x) => x + 1);
+
+      setTimeout(() => {
+        setFirstPick(null);
+        setSecondPick(null);
+        setDisabled(false);
+      }, 400);
+    } else {
+      setTimeout(() => {
+        setFirstPick(null);
+        setSecondPick(null);
+        setDisabled(false);
+      }, 700);
+    }
+  }, [firstPick, secondPick]);
+
+  const isFlipped = (card) =>
+    card.matched || card.id === firstPick?.id || card.id === secondPick?.id;
+
+  const isWin = matchedCount === emojis.length;
+
+  return (
+    <div className="w-full max-w-3xl mt-10">
+      <div className="bg-[#0b0b12] border border-white/10 rounded-2xl p-6 shadow-xl">
+        <div className="flex items-center justify-between flex-wrap gap-3 mb-4">
+          <div>
+            <h3 className="text-white text-xl font-bold">🧠 Mini Mind Game</h3>
+            <p className="text-gray-400 text-sm">
+              Match all pairs to win. (Just for fun 😄)
+            </p>
+          </div>
+
+          <div className="flex items-center gap-3">
+            <span className="text-gray-300 text-sm">
+              Moves: <b className="text-white">{moves}</b>
+            </span>
+
+            <button
+              onClick={resetGame}
+              className="px-4 py-2 rounded-xl bg-purple-600 text-white text-sm font-semibold hover:bg-purple-500 transition"
+            >
+              Restart
+            </button>
+          </div>
+        </div>
+
+        {isWin && (
+          <div className="mb-4 p-3 rounded-xl bg-green-500/10 border border-green-500/30">
+            <p className="text-green-300 font-semibold">
+              🎉 You won! Great memory 😄
+            </p>
+          </div>
+        )}
+
+        <div className="grid grid-cols-4 sm:grid-cols-4 gap-3">
+          {cards.map((card) => (
+            <button
+              key={card.id}
+              onClick={() => handlePick(card)}
+              className={`h-16 sm:h-20 rounded-2xl border border-white/10
+              flex items-center justify-center text-2xl sm:text-3xl
+              transition-all duration-200
+              ${isFlipped(card) ? "bg-white/10" : "bg-white/5 hover:bg-white/10"}`}
+            >
+              {isFlipped(card) ? card.value : "❓"}
+            </button>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
 
 export default Contact;

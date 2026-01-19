@@ -44,7 +44,7 @@ const Work = () => {
       title: "Lucknow Cares",
       description: "Citizen complaint & service app.",
       playstore:
-        "https://play.google.com/store/apps/details?id=com.customer.lkocares",
+        "https://play.google.com/store/apps/details?id=com.ramainfotech.kctsl",
     },
     {
       id: 7,
@@ -59,6 +59,20 @@ const Work = () => {
       description: "District administration complaint app.",
       playstore:
         "https://play.google.com/store/apps/details?id=com.customer.dmlko",
+    },
+     {
+      id: 9,
+      title: "Hello Kisan",
+      description: "District administration complaint app.",
+      playstore:
+        "https://apps.apple.com/us/app/hello-kisan-i-wrd-helpline/id1581968240",
+    },
+     {
+      id: 10,
+      title: "UP Transport iOS",
+      description: "District administration complaint app.",
+      playstore:
+        "https://apps.apple.com/us/app/up-transport/id1291675313",
     },
   ];
 
