@@ -78,18 +78,9 @@ const About = () => {
             className="mt-8 p-6 sm:p-7 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-[0_0_40px_rgba(168,85,247,0.15)]"
           >
             <p className="text-base sm:text-lg text-gray-300 leading-relaxed">
-              I’m a React Native Developer with 7+ years of experience in
-              building and maintaining high-quality Android & iOS applications.
-              I specialize in creating scalable, performance-optimized mobile
-              apps using React Native, along with experience in Flutter and
-              native Android development. I have worked on multiple real-world
-              projects including Government Public Grievance Redressal Systems
-              (PGRS) and public service applications, handling complete
-              development cycles such as UI implementation, API integration,
-              database management, testing, debugging, and Play Store/App Store
-              deployment. I focus on writing clean and reusable code, delivering
-              smooth user experiences, and building secure applications with
-              reliable backend communication and cloud services.
+              • 7+ years in React Native (Android + iOS) • API integration,
+              performance optimization, and app deployments • Government &
+              public service applications (PGRS)
             </p>
           </motion.div>
 
